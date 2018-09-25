@@ -1,23 +1,20 @@
-package org.cap.demo;
-
+package com.capgemini.day2_demo;
+import static java.lang.System.out;
+import java.util.Scanner;
 public class Test {
-//instance variable 
-	int count;
-	char ch;
-	boolean flag;
-	byte num;
-	float pi;
+
+	public void testif(int x) {
+		if(x>0) {
+			out.println("Positive");
+		}
+		else {
+			out.println("negative");
+		}
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int mynum=500;
 Test t=new Test();
-System.out.println(t.count);
-System.out.println(t.ch);
-System.out.println(t.flag);
-System.out.println(t.num);
-System.out.println(t.pi);
-System.out.println(mynum);
-
+t.testif(-67);
 	}
 
 }
