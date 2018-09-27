@@ -1,12 +1,25 @@
-package org.cap.demo;
-import static java.lang.System.out;
+package org.cap.day4;
+
 public class MainClass {
 	public static void main(String[] args) {
-		 
-		SimpleInterest s=new SimpleInterest();
-		s.getData();
-		out.println("Simple Interest is : ");
-		out.println(s.calculate());
+		Weekdays myday=Weekdays.MON;
+		switch(myday) {
+		case SUN:
+			System.out.println("Holidays");
+			break;
+		case MON:
+		case TUE:
+		case WED:
+		case THUR:
+		case FRI:
+			System.out.println("wORKING DAYS");
+			break;
+		case SAT:
+			System.out.println("lEARNING DAYS");
+			break;
+			default:
+				System.out.println("invalid");
+		}
 	}
 
 }
